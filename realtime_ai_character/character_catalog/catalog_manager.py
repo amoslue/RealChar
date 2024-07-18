@@ -46,7 +46,7 @@ class CatalogManager(Singleton):
         self.characters: dict[str, Character] = {}
         self.author_name_cache: dict[str, str] = {}
         self.load_characters("default", overwrite)
-        self.load_characters("community", overwrite)
+        # self.load_characters("community", overwrite)
         if overwrite:
             logger.info("Persisting data in the chroma.")
             self.db.persist()
@@ -126,9 +126,9 @@ class CatalogManager(Singleton):
         if source == "default":
             path = Path(__file__).parent
             excluded_dirs = {"__pycache__", "archive", "community"}
-        elif source == "community":
-            path = Path(__file__).parent / "community"
-            excluded_dirs = {"__pycache__", "archive"}
+        # elif source == "community":
+        #     path = Path(__file__).parent / "community"
+        #     excluded_dirs = {"__pycache__", "archive"}
         else:
             raise ValueError(f"Invalid source: {source}")
 

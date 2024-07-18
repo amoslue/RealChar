@@ -31,27 +31,24 @@ export default function Tabs({ characters }) {
   return (
     <>
       <div className='flex flex-row justify-center mt-10'>
-        <div className='w-[630px] grid grid-cols-3 gap-5 border-2 rounded-full p-1 border-tab'>
-          <TabButton isSelected={tabNow === 'explore'} handlePress={() => setTabNow('explore')}>
-            Explore
-          </TabButton>
-          <TabButton isSelected={tabNow === 'community'} handlePress={() => setTabNow('community')}>
-            Community
-          </TabButton>
-          <TabButton
-            isSelected={user && tabNow === 'myCharacters'}
-            isDisabled={user == null}
-            handlePress={() => setTabNow('myCharacters')}
-          >
-            My Characters
-          </TabButton>
-        </div>
-      </div>
+  <div className='w-[630px] tab-container border-2 rounded-full p-1 border-tab'>
+    <div></div> {/* 空div占位 */}
+    <TabButton
+      isSelected={user && tabNow === 'myCharacters'}
+      isDisabled={user == null}
+      handlePress={() => setTabNow('myCharacters')}
+    >
+      My Characters
+    </TabButton>
+    <div></div> {/* 空div占位 */}
+  </div>
+</div>
+
       <ExploreTab
         characters={charactersShown(tabNow)}
-        isDisplay={tabNow === 'explore' || tabNow === 'community'}
+        isDisplay={tabNow === 'myCharacters'}
       />
-      {user && <MyTab isDisplay={tabNow === 'myCharacters'} />}
+      {user && <MyTab isDisplay={tabNow === 'explore'} />}
     </>
   );
 }

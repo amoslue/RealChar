@@ -37,11 +37,11 @@ export default function Footer() {
           <FaTwitter size={24} />
         </Link>
       </div>
-      <p className='copyright text-xs text-center my-7'>
+      {/* <p className='copyright text-xs text-center my-7'>
         Copyright © 2023 RealChar. All rights reserved. Any AI character&apos;s statements are
         fictional and don&apos;t represent actual beliefs or opinions. Ver:{' '}
         {process.env.NEXT_PUBLIC_RC_BUILD_NUMBER}
-      </p>
+      </p> */}
     </footer>
   );
 }

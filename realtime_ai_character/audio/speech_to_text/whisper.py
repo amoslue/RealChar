@@ -87,6 +87,7 @@ class Whisper(Singleton, SpeechToText):
         text = self.recognizer.recognize_whisper_api(
             audio,
             api_key=config.api_key,
+            
         )
         return text
 

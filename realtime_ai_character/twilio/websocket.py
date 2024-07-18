@@ -50,23 +50,23 @@ twilio_router = APIRouter(
 )
 
 character_list = [
-    "annie",
-    "bruce_wayne",
-    "arnold_schwarzenegger",
-    "helen_inhabitants_zone",
-    "ion_stoica",
-    "kean_zuckerberg",
-    "the_u_reeves",
-    "markcat",
-    "the_dolphin",
-    "elon_musk",
-    "loki",
-    "raiden_shogun_and_ei",
+    # "annie",
+    # "bruce_wayne",
+    # "arnold_schwarzenegger",
+    # "helen_inhabitants_zone",
+    # "ion_stoica",
+    # "kean_zuckerberg",
+    # "the_u_reeves",
+    # "markcat",
+    # "the_dolphin",
+    # "elon_musk",
+    # "loki",
+    # "raiden_shogun_and_ei",
     "realchar",
     "rebyte",
-    "sam_altman",
-    "santa_claus",
-    "steve_jobs",
+    # "sam_altman",
+    # "santa_claus",
+    # "steve_jobs",
 ]
 
 manager = get_connection_manager()

@@ -279,12 +279,12 @@ struct CharacterOptionView: View {
 struct ConfigView_Previews: PreviewProvider {
     static var previews: some View {
         ConfigView(options: [
-            .init(id: "god",
-                  name: "Mythical god",
-                  description: "Rogue",
-                  imageUrl: URL(string: "https://storage.googleapis.com/assistly/static/realchar/loki.png")!,
-                  authorName: "",
-                  source: "default"),
+            // .init(id: "god",
+            //       name: "Mythical god",
+            //       description: "Rogue",
+            //       imageUrl: URL(string: "https://storage.googleapis.com/assistly/static/realchar/loki.png")!,
+            //       authorName: "",
+            //       source: "default"),
             .init(id: "hero",
                   name: "Anime hero",
                   description: "Noble",

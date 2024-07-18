@@ -73,10 +73,8 @@ Support long term memory out of the box, so that user can have a persistent conv
 ReByte Runtime
 
 description: >-
-  ReByte is a serial of infrastructure that enables end users to create their own AI tools without the need for a data science or engineering background.
-
-￼
- Welcome to ReByte
+ Alex is an AI English teacher. 
+ Welcome to learn languages!
 
 End User Programming
 
@@ -84,7 +82,7 @@ In past decades, the software industry has been dominated by a small group of pe
 
 This will open the hood of software development to a much larger group of people, every person can use their personal computers to create their personal software tools. Every company can use their private data to create their personal software tools for internal or external uses.
 
-ReByte is built with above mission in mind: to empower end users to create their own tools without the need for a data science or engineering background.
+ReByte is built with above mission in mind: to empower end users to create their own tools without need for a data science or engineering background.
 
 Also, ReByte is built to solve following problems in LLM application development:
 
